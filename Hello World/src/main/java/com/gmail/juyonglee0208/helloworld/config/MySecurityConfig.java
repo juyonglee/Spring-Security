@@ -26,7 +26,6 @@ public class MySecurityConfig {
         return new InMemoryUserDetailsManager(user, admin);
     }
 
-
     @Bean
     public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
