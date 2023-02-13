@@ -14,8 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class MyAPIController {
 
     @GetMapping
-    public @ResponseBody
-    Authentication authInfo() {
+    public @ResponseBody Authentication authInfo() {
         return SecurityContextHolder.getContext().getAuthentication();
     }
 
